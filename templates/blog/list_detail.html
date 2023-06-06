@@ -1,6 +1,15 @@
 {% extends 'base.html'%}
 {% block content%}
 {%for tasks in tasks%}
-{{tasks.title}}
+<div class="container">
+    <h1>{{tasks.title}}</h1>
+    <p>{{tasks.content}}</p>
+    <h2>{{tasks.author}}</h2>
+    <h3>{{tasks.categories}}</h3>
+    <h3>{{tasks.pub_data}}</h3>
+    </div>
+    <br>
+    <hr>
+
 {%endfor%}
     {%endblock%}
