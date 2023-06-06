@@ -21,3 +21,14 @@ class BlogCreateView(CreateView):
     form_class = PostCreateForm
     template_name = "blog/task_create.html"
     success_url = reverse_lazy('blog:blog_list')
+
+class BlogUpdateView(UpdateView):
+    model = Post
+    form_class = PostCreateForm
+    template_name = "blog/task_update.html"
+    success_url= reverse_lazy('blog:blog_list')
+
+class BlogDeleteView(DeleteView):
+    model = Post
+    template_name = 'blog/task_delete.html'
+    success_url= reverse_lazy('blog:blog_list')
