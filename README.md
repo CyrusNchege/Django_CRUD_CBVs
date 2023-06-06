@@ -12,9 +12,22 @@ git clone https://github.com/CyrusNchege/Django_CRUD_CBVs
 ```
 cd Django_CRUD_CBVs
 ```
-Create a virtual environment using command `python3 -m venv env`
 
-Activate environment `source env/bin/activate`
+### Create a virtual environment  and acticate environment
+
+#### linux
+```
+ python3 -m venv env
+
+source env/bin/activate
+```
+#### windows
+```
+ python -m venv env
+
+.\env\Scripts\activate
+
+```
 
 ```
 pip install -r requirements.txt
