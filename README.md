@@ -28,7 +28,7 @@ source env/bin/activate
 .\env\Scripts\activate
 
 ```
-
+#### Install requirement 
 ```
 pip install -r requirements.txt
 ```
@@ -41,5 +41,12 @@ python manage.py migrate
 ```
 python manage.py runserver
 ```
+#### Front View
 http://127.0.0.1:8000/blog/
 ![HOMEPAGE Image](./static/images/list.png)
+
+#### Detail view
+http://127.0.0.1:8000/blog/1/
+
+Detail is a view that displays a single instance of a model.
+![HOMEPAGE Image](./static/images/detail.png)
